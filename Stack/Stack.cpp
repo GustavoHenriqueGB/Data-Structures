@@ -21,19 +21,19 @@ bool Stack::isEmpty() {
 
 void Stack::push(ItemType item) {
     if (!isFull()) {
+        cout << "The Stack is full\n";
+    } else {
         structure[size] = item;
         size++;
-    } else {
-        cout << "The Stack is full\n";
     }    
 }
 
 void Stack::pop() {
-    if (!isEmpty()) {
-        structure[size - 1]; 
-        size--;
-    } else {
+    if (isEmpty()) {
         cout << "The Stack is empty\n";
+    } else {
+        size--;
+        structure[size - 1]; 
     }
 }
 

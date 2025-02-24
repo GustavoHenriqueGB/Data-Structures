@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
 
-typedef int ItemType; // Defines the type of items stored in the Stack
+typedef int ItemType; // Define the type of items stored in the Stack
 const int max_items = 100;
 
 using namespace std;
