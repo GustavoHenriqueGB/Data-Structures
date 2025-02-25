@@ -25,7 +25,8 @@ int main() {
                 break;
 
             case 2:
-                item = stack1.pop();
+                item = stack1.top();
+                stack1.pop();
                 cout << "Popped element: " << item << "\n";
                 break;  
 

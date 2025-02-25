@@ -17,6 +17,8 @@ class Stack { // Definition of the Stack class
         bool isFull(); // Check if the Stack is full
         bool isEmpty(); // Check if the Stack is empty
         void push(ItemType item); // Add an item to the Stack
-        ItemType pop(); // Remove an item from the Stack
+        void pop(); // Remove an item from the Stack
+        ItemType top(); // Return the top item of the Stack
+        int getSize(); // Return the size of the Stack
         void print(); // Print the entire Stack
 };

@@ -28,14 +28,21 @@ void Stack::push(ItemType item) {
     }    
 }
 
-ItemType Stack::pop() {
+void Stack::pop() {
     if (isEmpty()) {
         cout << "The Stack is empty\n";
-        return 0;
     } else {
         size--;
-        return structure[size + 1]; 
+        structure[size - 1]; 
     }
+}
+
+ItemType Stack::top() {
+    return structure[size - 1];
+}
+
+int Stack::getSize() {
+    return size;
 }
 
 void Stack::print() {
