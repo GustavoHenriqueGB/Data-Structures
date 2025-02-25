@@ -2,19 +2,24 @@
 #include <iostream>
 
 typedef int ItemType; // Define the type of items stored in the Stack
-const int max_items = 100;
 
 using namespace std;
 
-class Stack // Definition of the Stack class
+struct Element
 {
+    ItemType data; // Stores the value of the current element
+    Element* pnext; // Pointer that points to the next item of the Stack
+};
+
+
+class Dynamic_Stack // Definition of the Stack class
+{    
     private:
-        ItemType* structure;
-        int size;
-    
+        Element *peak; // Pointer that points the peak of the Stack
+
     public:
-        Stack(); // Constructor
-        ~Stack();  // Destructor
+        Dynamic_Stack(); // Constructor
+        ~Dynamic_Stack();  // Destructor
         bool isFull(); // Check if the Stack is full
         bool isEmpty(); // Check if the Stack is empty
         void push(ItemType item); // Add an item to the Stack

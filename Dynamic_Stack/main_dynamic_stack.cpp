@@ -1,11 +1,11 @@
 #include <iostream>
-#include "Stack.h"
+#include "Dynamic_Stack.h"
 
 using namespace std;
 
 int main() {
     
-    Stack stack1;
+    Dynamic_Stack stack1;
     ItemType item;
     int option;
 
@@ -25,8 +25,7 @@ int main() {
                 break;
 
             case 2:
-                item = stack1.top();
-                stack1.pop();
+                item = stack1.pop();
                 cout << "Popped element: " << item << "\n";
                 break;  
 

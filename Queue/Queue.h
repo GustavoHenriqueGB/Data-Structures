@@ -6,7 +6,8 @@ const int max_items = 100;
 
 using namespace std;
 
-class Queue{ // Definition of the Queue class
+class Queue // Definition of the Queue class
+{
     private:
         ItemType* structure;
         int first, last;
