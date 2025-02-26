@@ -1,4 +1,3 @@
-#include <vector>
 #include <iostream>
 
 typedef int ItemType; // Define the type of items stored in the Queue
