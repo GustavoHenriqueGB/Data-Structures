@@ -22,7 +22,7 @@ class Dynamic_Queue // Definition of the Queue class
         ~Dynamic_Queue();  // Destructor
         bool isFull(); // Check if the Queue is full
         bool isEmpty(); // Check if the Queue is empty
-        void push(ItemType item); // Add an item to the Queue
+        void push(ItemType); // Add an item to the Queue
         ItemType pop(); // Remove an item from the Queue
         void print(); // Print the entire Queue
 };
